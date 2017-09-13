@@ -4,26 +4,31 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="cache-control" content="max-age=0" />
+	<meta http-equiv="cache-control" content="no-cache" />
+	<meta http-equiv="expires" content="0" />
+	<meta http-equiv="pragma" content="no-cache" />
+
     <title>FIX, curated coffee components</title>
 
     <link href="reset.css" rel="stylesheet">
     <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,600" type="text/css" rel="stylesheet">
     <link href="main.css" rel="stylesheet">
 	
-    <meta name="salesforce-community" content="https://<?php echo getenv('SALESFORCE_COMMUNITY_URL');?>">
-    <meta name="salesforce-client-id" content="<?php echo getenv('SALESFORCE_CLIENT_ID');?>">
-    <meta name="salesforce-redirect-uri" content="https://<?php echo getenv('SALESFORCE_HEROKUAPP_URL');?>/_callback.php">
-    <meta name="salesforce-mode" content="<?php echo getenv('SALESFORCE_MODE');?>">
-    <meta name="salesforce-namespace" content="<?php echo getenv('SALESFORCE_NAMESPACE');?>">
+    <meta name="salesforce-community" content="https://lucgilr-developer-edition.eu6.force.com/customers">
+    <meta name="salesforce-client-id" content="3MVG98_Psg5cppyZFSE9IdHLIUHC7NS3_V8Oec0wsphdsCcAg5GtxeAciNbKunR5FKkI4pzmWgw5v5qrULPfv">
+    <meta name="salesforce-redirect-uri" content="https://sfdc-login-token.herokuapp.com/callback">
+    <meta name="salesforce-mode" content="modal">
+    <meta name="salesforce-namespace" content="">
     <meta name="salesforce-target" content="#sign-in-link">
     <meta name="salesforce-save-access-token" content="true">
-    <meta name="salesforce-forgot-password-enabled" content="<?php echo getenv('SALESFORCE_FORGOT_PASSWORD_ENABLED');?>">
-    <meta name="salesforce-self-register-enabled" content="<?php echo getenv('SALESFORCE_SELF_REGISTER_ENABLED');?>">
+    <meta name="salesforce-forgot-password-enabled" content="true">
+    <meta name="salesforce-self-register-enabled" content="true">
     <meta name="salesforce-login-handler" content="onLogin">
     <meta name="salesforce-logout-handler" content="onLogout">
-	<meta name="salesforce-use-min-js" content="false">
-	<link href="https://<?php echo getenv('SALESFORCE_COMMUNITY_URL');?>/servlet/servlet.loginwidgetcontroller?type=css" rel="stylesheet" type="text/css" />
-    <script src="https://<?php echo getenv('SALESFORCE_COMMUNITY_URL');?>/servlet/servlet.loginwidgetcontroller?type=javascript_widget" async defer></script>
+    <meta name="salesforce-use-min-js" content="false">
+	<link href="https://lucgilr-developer-edition.eu6.force.com/customers/servlet/servlet.loginwidgetcontroller?type=css" rel="stylesheet" type="text/css" />
+    <script src="https://lucgilr-developer-edition.eu6.force.com/customers/servlet/servlet.loginwidgetcontroller?type=javascript_widget" async defer></script>
   </head>
   
   <body>
@@ -40,90 +45,6 @@
         </div>
       </div>
     </header>
-    <section class="textured-section">
-      <h1>Curated Coffee Components</h1>
-      
-
-      <ul class="products">
-        <li>
-          <img class="product-image" src="images/products/071715_Heroku_3270-.jpg" alt="">
-          <h3 class="product-name">AeroPress Coffee Maker</h3>
-          <div class="product-button"><a id="aero_link" class="btn btn-hot" href="#" onclick="SFIDWidget.login()">Login for more info</a></div>
-        </li>
-        <li>
-          <img class="product-image" src="images/products/071715_Heroku_3263-.jpg" alt="">
-          <h3 class="product-name">MSR Reactor 2.5L Stove System</h3>          
-          <div class="product-button"><a id="reactor_link" class="btn btn-hot" href="#" onclick="SFIDWidget.login()">Login for more info</a></div>
-        </li>
-        <li>
-          <img class="product-image" src="images/products/071715_Heroku_3302.jpg" alt="">
-          <h3 class="product-name">Chemex Classic 6-cup Coffee Maker</h3>
-          <div class="product-button"><a id="chemex_link" class="btn btn-hot" href="#" onclick="SFIDWidget.login()">Login for more info</a></div>
-        </li>
-      </ul>
-
-    </section>
-    <section>
-
-      <h1>Complete Brewing Kits</h1>
-
-      <ul class="kits">
-        <li>
-          <img class="kit-image" src="images/kits/071715_Heroku_3338-Edit-.jpg" alt="">
-          <h3 class="kit-name">The Chemex Kit</h3>
-        </li>
-        <li>
-          <img class="kit-image" src="images/kits/071715_Heroku_3353-Edit-.jpg" alt="">
-          <h3 class="kit-name">The Pour Over Kit</h3>
-        </li>
-        <li>
-          <img class="kit-image" src="images/kits/071715_Heroku_3346-.jpg" alt="">
-          <h3 class="kit-name">The Camper’s Kit</h3>
-        </li>
-        <li>
-          <img class="kit-image" src="images/kits/071715_Heroku_3376-Edit-.jpg" alt="">
-          <h3 class="kit-name">The French Press Kit</h3>
-        </li>
-        <li>
-          <img class="kit-image" src="images/kits/071715_Heroku_3385-.jpg" alt="">
-          <h3 class="kit-name">The Cold Brew Kit</h3>
-        </li>
-      </ul>
-
-    </section>
-    <footer>
-
-      <div class="trailer-logo">
-        <img class="logo" src="images/fix-logotype.png" alt="Fix">
-        <br>
-        <span class="logo-text">Fine Coffee Kits</span>
-      </div>
-
-      <div class="trailer-links">
-        <ul class="internal-links">
-          <li><a href="https://heroku.github.io/fix">About</a></li>
-          <li><a href="https://heroku.github.io/fix">Support</a></li>
-          <li><a href="https://heroku.github.io/fix">Contact Us</a></li>
-        </ul>
-        <ul class="social-links">
-          <li><a href="#">
-            <img class="social-logo" src="images/social/twitter.png" alt="">
-            <span class="social-verb">Follow on</span>
-            <span class="social-name">Twitter</span></a></li>
-          <li><a href="#">
-            <img class="social-logo" src="images/social/facebook.png" alt="">
-            <span class="social-verb">Like Us on</span>
-            <span class="social-name">Facebook</span></a></li>
-          <li><a href="#">
-            <img class="social-logo" src="images/social/instagram.png" alt="">
-            <span class="social-verb">Follow on</span>
-            <span class="social-name">Instagram</span></a></li>
-        </ul>
-      </div>
-
-    </footer>
-	
-
 	
 	<script>
 
